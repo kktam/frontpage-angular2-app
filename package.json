@@ -1,0 +1,37 @@
+{
+  "name": "apollo-frontpage-angular2-app",
+  "version": "0.0.0",
+  "license": "MIT",
+  "angular-cli": {},
+  "scripts": {
+    "start": "ng serve"
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/common": "2.0.0",
+    "@angular/compiler": "2.0.0",
+    "@angular/core": "2.0.0",
+    "@angular/forms": "2.0.0",
+    "@angular/http": "2.0.0",
+    "@angular/platform-browser": "2.0.0",
+    "@angular/platform-browser-dynamic": "2.0.0",
+    "@angular/router": "3.0.0",
+    "angular2-apollo": "^0.4.6",
+    "apollo-client": "^0.4.15",
+    "core-js": "^2.4.0",
+    "graphql-tag": "^0.1.13",
+    "rxjs": "5.0.0-beta.12",
+    "ts-helpers": "^1.1.1",
+    "zone.js": "^0.6.22"
+  },
+  "devDependencies": {
+    "@types/isomorphic-fetch": "0.0.30",
+    "@types/jasmine": "^2.2.30",
+    "@types/node": "^6.0.38",
+    "angular-cli": "1.0.0-beta.11-webpack.8",
+    "codelyzer": "~0.0.26",
+    "ts-node": "1.2.1",
+    "tslint": "3.13.0",
+    "typescript": "^2.0.0"
+  }
+}
