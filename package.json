@@ -4,7 +4,11 @@
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
-    "start": "ng serve"
+    "start": "ng serve",
+    "remove-mutation": "node ./scripts/remove-mutation.js",
+    "build": "ng build",
+    "build:step1": "npm run remove-mutation && npm run build",
+    "build:step2": "git reset --hard && npm run build"
   },
   "private": true,
   "dependencies": {
@@ -31,6 +35,7 @@
     "angular-cli": "1.0.0-beta.11-webpack.8",
     "codelyzer": "~0.0.26",
     "graphql-typings": "0.0.1-beta-2",
+    "replace": "^0.3.0",
     "ts-node": "1.2.1",
     "tslint": "3.13.0",
     "typescript": "^2.0.0"
