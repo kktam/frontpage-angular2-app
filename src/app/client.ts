@@ -1,6 +1,9 @@
-import ApolloClient, { createNetworkInterface } from 'apollo-client';
+import ApolloClient from 'apollo-client';
 
-const networkInterface = createNetworkInterface('http://localhost:8080/graphql');
+import InBrowserNetworkInterface from './in-browser-network-interface';
+import schema from './schema';
+
+const networkInterface = new InBrowserNetworkInterface({ schema });
 
 export const client = new ApolloClient({
   networkInterface,

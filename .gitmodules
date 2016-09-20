@@ -1,0 +1,3 @@
+[submodule "src/app/schema/frontpage-server"]
+	path = src/app/schema/frontpage-server
+	url = https://github.com/apollostack/frontpage-server.git

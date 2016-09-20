@@ -1,14 +1,13 @@
 #!/bin/bash
 
 # remove references to PostUpvoterComponent from PostListComponent
-npm run build:step1
+npm run build:query
 (cd dist;
-aws s3 sync . s3://dev.apollodata.com/frontpage-angular2-app-step1 --acl public-read)
+aws s3 sync . s3://dev.apollodata.com/frontpage-angular2-app-query --acl public-read)
 
 # clean up
-git reset --hard
-npm run build:step2
+npm run build:mutation
 (cd dist;
-aws s3 sync . s3://dev.apollodata.com/frontpage-angular2-app-step2 --acl public-read)
+aws s3 sync . s3://dev.apollodata.com/frontpage-angular2-app-mutation --acl public-read)
 
 git reset --hard
