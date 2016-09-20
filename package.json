@@ -7,8 +7,9 @@
     "start": "ng serve",
     "remove-mutation": "node ./scripts/remove-mutation.js",
     "build": "ng build",
-    "build:step": "npm run remove-mutation && npm run build",
-    "build:mutation": "git reset --hard && npm run build"
+    "build:query": "npm run remove-mutation && npm run build",
+    "build:mutation": "git reset --hard && npm run build",
+    "deploy": "sh deploy.sh"
   },
   "private": true,
   "dependencies": {
