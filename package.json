@@ -7,8 +7,8 @@
     "start": "ng serve",
     "remove-mutation": "node ./scripts/remove-mutation.js",
     "build": "ng build",
-    "build:query": "npm run remove-mutation && npm run build",
-    "build:mutation": "git reset --hard && npm run build",
+    "build:query": "npm run remove-mutation && npm run build -- --base-href /frontpage-angular2-app-query/",
+    "build:mutation": "git reset --hard && npm run build -- --base-href /frontpage-angular2-app-mutation/",
     "deploy": "sh deploy.sh"
   },
   "private": true,
