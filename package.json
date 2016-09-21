@@ -21,8 +21,8 @@
     "@angular/platform-browser": "2.0.0",
     "@angular/platform-browser-dynamic": "2.0.0",
     "@angular/router": "3.0.0",
-    "angular2-apollo": "^0.4.6",
-    "apollo-client": "^0.4.15",
+    "angular2-apollo": "0.4.6",
+    "apollo-client": "0.4.15",
     "core-js": "^2.4.0",
     "graphql": "^0.7.0",
     "graphql-tag": "^0.1.13",
@@ -33,7 +33,6 @@
   },
   "devDependencies": {
     "@types/isomorphic-fetch": "0.0.30",
-    "@types/jasmine": "^2.2.30",
     "@types/node": "^6.0.38",
     "angular-cli": "1.0.0-beta.11-webpack.8",
     "codelyzer": "~0.0.26",
