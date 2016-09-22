@@ -1,7 +1,7 @@
 #!/bin/bash
 
-SCHEMA=src/app/schema/frontpage-server/data/schema.js
-RESOLVERS=src/app/schema/frontpage-server/data/resolvers.js
+SCHEMA=data/schema.js
+RESOLVERS=data/resolvers.js
 
 # compile js files from frontpage-server
 (cd src/app/schema/frontpage-server;
